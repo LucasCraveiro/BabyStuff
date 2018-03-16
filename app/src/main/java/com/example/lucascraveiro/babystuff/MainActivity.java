@@ -1,5 +1,6 @@
 package com.example.lucascraveiro.babystuff;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,5 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void WhiteNoise(View view) {
+        Intent intentWhite = new Intent(this, WhiteNoiseGrid.class);
+        startActivity(intentWhite);
     }
 }

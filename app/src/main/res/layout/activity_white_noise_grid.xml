@@ -54,7 +54,8 @@
         android:layout_height="match_parent"
         android:rowCount="3"
         android:columnCount="2"
-        android:id="@+id/grid_whitenoise">
+        android:id="@+id/grid_whitenoise"
+        >
 
 
         <ImageButton
@@ -62,8 +63,9 @@
             android:layout_width="120dp"
             android:layout_height="130dp"
             android:tag="calm"
-            android:layout_margin="5dp"
+            android:layout_marginRight="20dp"
             android:scaleType="centerCrop"
+
             />
 
         <ImageButton
@@ -71,7 +73,7 @@
             android:layout_width="120dp"
             android:layout_height="130dp"
             android:tag="fan"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="20dp"
             android:scaleType="centerCrop"/>
 
         <ImageButton
@@ -79,7 +81,8 @@
             android:layout_width="120dp"
             android:layout_height="130dp"
             android:tag="ocean"
-            android:layout_margin="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
             android:scaleType="centerCrop"/>
 
         <ImageButton
@@ -87,7 +90,8 @@
             android:layout_width="120dp"
             android:layout_height="130dp"
             android:tag="rain"
-            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
             android:scaleType="centerCrop"/>
 
         <ImageButton
@@ -95,7 +99,8 @@
             android:layout_width="120dp"
             android:layout_height="130dp"
             android:tag="heartbeat"
-            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
             android:scaleType="centerCrop"/>
 
         <ImageButton
@@ -103,7 +108,9 @@
             android:layout_width="120dp"
             android:layout_height="130dp"
             android:tag="river"
-            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+
             android:scaleType="centerCrop"/>
     </GridLayout>
 
