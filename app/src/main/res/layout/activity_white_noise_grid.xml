@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_tranparency"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.lucascraveiro.babystuff.WhiteNoiseGrid">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/arrow"
+            android:onClick="Backpage"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="White Noise"
+            android:textSize="40sp"
+            android:textColor="#212121"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:id="@+id/grid_whitenoise">
+
+
+        <ImageButton
+            android:background="@drawable/calm"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:tag="calm"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageButton
+            android:background="@drawable/fan"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:tag="fan"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:background="@drawable/ocean"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:tag="ocean"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:background="@drawable/rain"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:tag="rain"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:background="@drawable/heartbeat"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:tag="heartbeat"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:background="@drawable/river"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:tag="river"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"/>
+    </GridLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
