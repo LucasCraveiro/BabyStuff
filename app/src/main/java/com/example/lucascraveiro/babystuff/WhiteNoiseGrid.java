@@ -1,5 +1,6 @@
 package com.example.lucascraveiro.babystuff;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +28,13 @@ public class WhiteNoiseGrid extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
 
         String imageTag = view.getTag().toString();
+
+        Intent intent = new Intent(this, WhiteNoisePlayer.class);
+
+        //3. put extra (image tag)
+        intent.putExtra("title", imageTag);
+        //4. start activity
+        startActivity(intent);
 
 
     }
