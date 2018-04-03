@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".WhiteNoiseGrid" />
-        <activity android:name=".WhiteNoisePlayer"></activity>
+        <activity android:name=".WhiteNoisePlayer" />
+        <activity android:name=".AnimalSoundGrid" />
+        <activity android:name=".AnimalSoundPlayer"></activity>
     </application>
 
 </manifest>

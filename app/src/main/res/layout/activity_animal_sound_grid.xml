@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4C3"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.lucascraveiro.babystuff.AnimalSoundGrid">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/arrow"
+            android:onClick="Backpage"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Animal Sounds"
+            android:textColor="#212121"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.566"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:id="@+id/grid_animalsound"
+            >
+
+
+            <ImageButton
+                android:background="@drawable/cow"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:tag="cow"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+
+                />
+
+            <ImageButton
+                android:background="@drawable/lion"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:tag="lion"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:background="@drawable/pig"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:tag="pig"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:background="@drawable/piu"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:tag="chick"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerCrop"/>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

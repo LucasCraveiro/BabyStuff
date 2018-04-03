@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void AnimalSound(View view) {
+        Intent intentAnimal = new Intent(this, AnimalSoundGrid.class);
+        startActivity(intentAnimal);
     }
 
     public void WhiteNoise(View view) {

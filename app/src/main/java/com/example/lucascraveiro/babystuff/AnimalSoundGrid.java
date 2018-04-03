@@ -7,14 +7,14 @@ import android.view.View;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
 
-public class WhiteNoiseGrid extends AppCompatActivity implements View.OnClickListener {
+public class AnimalSoundGrid extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_white_noise_grid);
+        setContentView(R.layout.activity_animal_sound_grid);
 
-        GridLayout gridLayout = findViewById(R.id.grid_whitenoise);
+        GridLayout gridLayout = findViewById(R.id.grid_animalsound);
         for (int i = 0; i < gridLayout.getChildCount(); i++) {
             ImageButton imgButt = (ImageButton) gridLayout.getChildAt(i);
             imgButt.setOnClickListener(this);
@@ -30,7 +30,7 @@ public class WhiteNoiseGrid extends AppCompatActivity implements View.OnClickLis
 
         String imageTag = view.getTag().toString();
 
-        Intent intent = new Intent(this, WhiteNoisePlayer.class);
+        Intent intent = new Intent(this, AnimalSoundPlayer.class);
 
         //3. put extra (image tag)
         intent.putExtra("title", imageTag);

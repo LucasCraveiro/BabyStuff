@@ -9,7 +9,7 @@ import android.widget.ScrollView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-public class WhiteNoisePlayer extends AppCompatActivity {
+public class AnimalSoundPlayer extends AppCompatActivity {
 
     public static final String TAG = "MainActivity";
     public int Media_White_ID;
@@ -24,7 +24,7 @@ public class WhiteNoisePlayer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_white_noise_player);
+        setContentView(R.layout.activity_animal_sound_player);
 
         String title = getIntent().getStringExtra("title");
 
@@ -87,7 +87,7 @@ public class WhiteNoisePlayer extends AppCompatActivity {
     private void initializePlaybackController() {
         MediaPlayerHolder mMediaPlayerHolder = new MediaPlayerHolder(this);
         Log.d(TAG, "initializePlaybackController: created MediaPlayerHolder");
-        mMediaPlayerHolder.setPlaybackInfoListener(new PlaybackListener());
+        mMediaPlayerHolder.setPlaybackInfoListener(new AnimalSoundPlayer.PlaybackListener());
         mPlayerAdapter = mMediaPlayerHolder;
         Log.d(TAG, "initializePlaybackController: MediaPlayerHolder progress callback set");
     }
