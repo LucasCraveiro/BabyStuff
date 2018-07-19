@@ -5,28 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F0F4C3"
+    android:background="@mipmap/blueblurback"
     tools:context="com.example.lucascraveiro.babystuff.MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@mipmap/background_tranparency"
          />
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="300dp"
         android:layout_height="150dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="15dp"
         android:src="@drawable/logodi"
-        android:id="@+id/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.042" />
 
 
     <ImageView
@@ -38,14 +37,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:onClick="WhiteNoise"
-        android:scaleType="centerCrop"
-        android:src="@drawable/btn1"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wnbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageView
@@ -57,8 +55,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="210dp"
         android:onClick="AnimalSound"
-        android:scaleType="centerCrop"
-        android:src="@drawable/btn2"
+        android:scaleType="fitCenter"
+        android:src="@drawable/asbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
